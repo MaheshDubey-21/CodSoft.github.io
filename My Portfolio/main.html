@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- -----------------font kit ------------------=- -->
+    <script src="https://kit.fontawesome.com/e8ab13ee7b.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+
+    <!-- -----------------------main mall material sab ka sab------------------------------------------ -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="name">
+                    <h1>Hello Codies!</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Undergraduate</p>
+                <h3>Hey there, <br>I'm <span>Mahesh Dubey</span></h3>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- ----------------------------------------------about me wala section ------------------------------------- -->
+
+
+    <div id="about"> 
+        <div class="container"> 
+            <div class="row">
+                <div class="about-colm-1">
+                    <img src="image/userr.jpg" alt="Mahesh Dubey">
+                </div>
+                <div class="about-colm-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Mahesh Dubey, an undergraduate student pursuing a B.Sc. in Computer Science at B.K. Birla College. As a fresher, I'm building expertise in the field while also establishing a presence as a social media influencer, engaging with audiences through impactful content. I am motivated to build multiple projects and inspire others to do the same.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>JAVA Developer</span><br>Building Apps/Games Using JAVA</li><br>
+                            <li><span>Web Development FrontEnd</span><br>Designing Web Interfaces</li><br>
+                            <li><span>Data Analysis</span><br>Data Analyst</li><br>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Java Projects</span><br>Developed various Java-based applications</li><br>
+                            <li><span>Web Development FrontEnd</span><br>Designing web interfaces for several projects</li><br>
+                            <li><span>Data Analysis</span><br>Analyzed datasets for university projects</li><br>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Present</span><br>B.Sc. in Computer Science at B.K. Birla College</li><br>
+                            <li><span>Web Development</span><br>Completed courses on FrontEnd development</li><br>
+                            <li><span>Data Analysis</span><br>Trained in basic data analysis tools and techniques</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+
+
+<!-- ------------services-------------section -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+             <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>Web Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa incidunt provident laboriosam quaerat
+                     eligendi aut soluta quo, iste cumque consectetur, odit praesentium totam, distinctio voluptates nam non
+                      tempore doloremque numquam?</p>
+                      <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analytic</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa incidunt provident laboriosam quaerat
+                     eligendi aut soluta quo, iste cumque consectetur, odit praesentium totam, distinctio voluptates nam non
+                      tempore doloremque numquam?</p>
+                      <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>applications Designing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa incidunt provident laboriosam quaerat
+                     eligendi aut soluta quo, iste cumque consectetur, odit praesentium totam, distinctio voluptates nam non
+                      tempore doloremque numquam?</p>
+                      <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>           
+
+
+
+
+
+
+<!-- -----------------portfolio---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.JPG" alt="">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>This is fully functional Calculator Developed By Using HTML/CSS/JS Only
+                        And in Responsive manner.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-2.JPG" alt="">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>This My own Website Which i prefer And a Responsive one so That It Looks
+                        More Professional 
+                    </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-3.JPG" alt="">
+                <div class="layer">
+                    <h3>Chess</h3>
+                    <p>This is App is made Using JAVA Only Which Can Be played With Two Players Around
+                        one pc .</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!-- ---------------------------------Contact me Section ---------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> maheshdubey685@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 7523060120</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mahesh-dubey-9a1310290" >
+                     <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/atuldubeyyy?igsh=enQyZXA3ZW0zdWUw">
+                        <i class="fa-brands fa-instagram"></i>
+
+                    <a href="https://github.com/gitboy721" >
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <a href="image/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form> 
+
+                    
+            
+<span id="msg"></span>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mahesh.<i class="fa-solid fa-users"></i> </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- ---------------------------JS for about my skills section ---------------------------------- -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!-- -------------------------------------------JS for mobile Bar And close icon-------------------------------------------- -->
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+    </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwmM0GugZDNvqZxofs9aw5HAnxbeEfgE7UuLnogHiJFi91T7ZELXUnxa-0FoyayhZRh/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent Successfully"
+            setTimeout (function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+    
+</body>
+</html>
