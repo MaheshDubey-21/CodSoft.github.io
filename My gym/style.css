@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed; /* Make it fixed during scrolling */
+    top: 0; /* Stick to the top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays on top */
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Darker background for better readability */
+}
+nav .fa-solid {
+    display: none;
+}
+.name h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.name h1 b {
+    color: red;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+    
+.home {
+    display: flex;
+    min-height: 100vh; /* Set to 100vh to match screen height */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.highlights h1 {
+    font-size: 4em;
+    color: #fff;
+}
+
+.highlights h3 {
+    font-size: 2em;
+    color: #aaa;
+    border-left: 8px solid red;
+}
+
+.highlights h1 b {
+    color: red;
+}
+
+.tagline {
+    max-width: 600px;
+    line-height: 1.8;
+    color: #ccc;
+    font-size: 20px;
+    text-align: center;
+}
+
+button.join {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 0;
+}
+
+button.join:hover {
+    background-color: darkred;
+}
+
+
+
+/* _____________________________________________About Section__________________________________________ */
+
+.about {
+    padding: 100px 0;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about h2 span {
+    color: red;
+}
+
+.about h6 {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cols p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.cols a.read-more {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cols a.read-more:hover {
+    background-color: darkred;
+}
+
+.about .box {
+    text-align: center;
+}
+
+.about .box img {
+    max-width: 85%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 30px;
+    }
+
+    /* Reorder image above text */
+    .image-col {
+        order: -1;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about h6 {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .cols p {
+        font-size: 1em;
+    }
+
+    .about .box img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about h2 {
+        font-size: 1.8em;
+    }
+
+    .cols p {
+        font-size: 0.9em;
+    }
+
+    .cols a.read-more {
+        padding: 8px 20px;
+        font-size: 0.9em;
+    }
+
+    .about .box img {
+        max-width: 90%;
+    }
+}
+
+/* __________________________________________________________Workout Section________________________________ */
+
+.workout {
+    padding: 100px 0; 
+    background-color: #111; 
+    color: #fff; 
+    text-align: center;
+}
+
+.workout h2 {
+    font-size: 44px;
+    position: relative;
+    text-align: center;
+    padding-top: 0px;
+    display: inline-block;
+    color: #fff;
+}
+
+.workout h2 span {
+    color: red;
+}
+
+.workout h6 {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+.workout .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.workout .content .frame {
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #222;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.workout .content .frame .box {
+    position: relative;
+    height: 200px;
+    width: 100%; 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.workout .content .frame .box img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+
+.workout .content .frame .box:hover img {
+    filter: brightness(100%);
+    transform: scale(1.1); 
+}
+
+.workout .content .frame:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8); 
+}
+
+
+
+
+
+
+.diet {
+    padding: 100px 0;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+.diet h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.diet h2 span {
+    color: red;
+}
+
+.diet h6 {
+    font-size: 1.2em;
+    color: #ccc;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cols p, .cols ul {
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    color: #bbb;
+}
+
+.cols ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cols ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.diet .box {
+    text-align: center;
+}
+
+.diet .box img {
+    max-width: 85%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+/* Contact Section */
+ #contact {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#contact .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#contact .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left, .contact-right {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.contact-left h1.sub-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-left p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.contact-left .social-icons {
+    margin-top: 20px;
+}
+
+.contact-left .social-icons a {
+    text-decoration: none;
+    color: #666;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.contact-left .social-icons a:hover {
+    color: #007bff; 
+}
+
+.contact-left .btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.contact-left .btn:hover {
+    background: #0056b3;
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-right form button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-right form button:hover {
+    background: #0056b3;
+}
+
+#msg {
+    margin-top: 15px;
+    font-size: 16px;
+    color: green;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+} 
+
+
+#span {
+    color:#61b752;
+    margin-top: -10px;
+    display: block;
+}
+
+/* --------------------Css for phone screen--------------------- */
+@media only screen and (max-width: 600px){
+
+#background{
+    background-image: url(image/background.jpg  );
+}
+
+nav .fa-solid{
+    display: block;
+    font-size: 25px;
+}
+nav ul {
+    background: red;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+
+}
+
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+}
